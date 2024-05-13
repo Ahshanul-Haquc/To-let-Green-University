@@ -1,0 +1,37 @@
+/* header part designed in the post_share.css file */
+:root{
+    --color: rgb(75, 189, 0);
+}
+#logo_img{
+    /* background-color: white; */
+    margin-right: 10px;
+    border-radius: 10px;
+
+}
+.content{
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+.row.content {height: 1500px}
+    
+/* Set gray background color and 100% height */
+.sidenav {
+  background-color:rgb(219 219 219 / 32%);
+  height: 100%;
+  margin: 0px;
+}
+li a{
+    color: black;
+}
+/* On small screens, set height to 'auto' for sidenav and grid */
+@media screen and (max-width: 767px) {
+  .sidenav {
+    height: auto;
+    padding: 15px;
+  }
+  .row.content {height: auto;} 
+}
+.adjust{
+    margin: 0px;
+}

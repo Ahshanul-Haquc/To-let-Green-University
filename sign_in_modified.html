@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Krub:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Madimi+One&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+    <title>Sign in</title>
+    <style>
+        /*common sobar jonno design*/
+        * {
+            margin: 0px;
+            padding: 0px;
+            font-family: "Madimi One", sans-serif;
+        }
+
+        body {
+            background: rgba(0, 0, 0, 0.459)url("green_university_pic.jpg");
+            background-size: cover;
+            background-blend-mode: darken;
+            background-repeat: no-repeat;
+            height: 700px;
+        }
+
+        .one {
+            height: 600px;
+            width: 700px;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            position: relative;
+            top: 50px;
+        }
+
+        /*project neme part ta design */
+        #projectName>span {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-size: 70px;
+            font-weight: bold;
+            color: red;
+            position: relative;
+            top: 170px;
+        }
+        #projectName #span2 {
+            color: rgb(8, 250, 8);
+        }
+
+        /*this is the secont part which is form section*/
+        #formSection {
+            width: 700px;
+            border: 0.5px solid rgba(255, 255, 255, 0.356);
+            border-radius: 20px;
+            background-color: rgba(255, 255, 255, 0.103);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        #formSection .two {
+            height: 50px;
+
+        }
+
+        #two1 {
+            font-size: 30px;
+            color: rgb(255, 255, 255);
+            text-align: center;
+            /* padding-left: 50px; */
+            padding: 10px;
+        }
+
+        label {
+            display: inline-block;
+            width: 150px;
+            padding-left: 20px;
+            padding-top: 10px;
+            font-size: 20px;
+            color: white;
+        }
+
+        .two #x {
+            width: 225px;
+            margin-right: 10px;
+        }
+
+        input {
+            height: 33px;
+            width: 463px;
+            border: 0.5px solid rgb(58, 58, 58);
+            border-radius: 17px;
+            padding-left: 10px;
+            font-size: 15px;
+            background-color: #fff1f1;
+        }
+        select{
+            height: 33px;
+            width: 100px;
+            border: 0.5px solid rgb(58, 58, 58);
+            border-radius: 17px;
+            padding-left: 10px;
+            font-size: 15px;
+            background-color: #ffe0e0;
+        }
+        .fff{
+            display: inline;
+        }
+        #robot{
+            height: 30px;
+            width: 463px;
+            border: 0.5px solid rgb(58, 58, 58);
+            border-radius: 17px;
+            padding-left: 10px;
+            font-size: 15px;
+            background-color: #ffe0e0;
+            display: inline-block;
+            position: relative;
+            top: 5px;
+        }
+        input[type="submit"]{
+            color: rgb(255, 255, 255);
+            position: relative;
+            left: 245px;
+            background: none;
+            border:1px solid white;
+            width: 210px;
+        }
+        input[type="submit"]:hover{
+            background-color: rgb(0, 253, 0);
+            color: white;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.411);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="one" id="projectName">
+            <span>To-let</span>
+            <span id="span2">Green University</span>
+        </div>
+        <div class="one" id="formSection">
+            <div class="two" id="two1">
+                <p>Sign in</p>
+            </div>
+            <div class="two">
+                <label for="x">Full name :</label>
+                <input type="text" name="" id="x" placeholder="first name"><input type="text" name="" id="x"
+                    placeholder="last name">
+            </div>
+            <div class="two">
+                <label for="a">Student id :</label>
+                <input type="number" name="" id="a" placeholder="enter your student id">
+            </div>
+            <div class="two">
+                <label for="b">Phone (+880) :</label>
+                <input type="number" name="" id="b" placeholder="enter your phone number">
+            </div>
+
+            <div class="two">
+                <label for="c">Email id :</label>
+                <input type="email" name="" id="c" placeholder="enter your email id">
+            </div>
+            <div class="two">
+                <label for="d">Password :</label>
+                <input type="text" name="" id="d" placeholder="enter password">
+            </div>
+            <div class="two">
+                <label for="e">Department :</label>
+                <select name="" id="e">
+                    <option value="">CSE</option>
+                    <option value="">EEE</option>
+                    <option value="">TEXTILE</option>
+                    <option value="">LAW</option>
+                    <option value="">ENGLISH</option>
+                    <option value="">SOCIALOZY</option>
+                </select>
+                <!-- <label for="f">Gender :</label>
+                <input type="radio" name="" id="f" class="fff">Male <input type="radio" name="" id="f" class="fff">Female -->
+            </div>
+            <div class="two">
+                <label for="">Varification :</label>
+                <div id="robot">
+                    <!-- <input type="checkbox">I'm not a robot! -->
+                </div>
+            </div>
+            <div class="two">
+                <input type="submit" name="" id="">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
